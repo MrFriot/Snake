@@ -9,6 +9,7 @@ def main() -> None:
     my_map = map.Map()
     my_map.setup("./maps/map1.json")
     print(my_map.points)
+    print(my_map.edges)
 
 
 if __name__ == "__main__":
