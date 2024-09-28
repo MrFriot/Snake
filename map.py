@@ -27,6 +27,7 @@ class Map:
                         point_edges.append(edge)
                 points.append(Point(point_name, point_edges))
             self.points = points
+            logging.info("Setup map successful.")
         except json.decoder.JSONDecodeError:
             logging.error("json.decoder.JSONDecodeError: map file misfiled.")
         except FileNotFoundError:
